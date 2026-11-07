@@ -1,1 +1,1204 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover MAISON ÉLÉRA, an exclusive collection of luxury fragrances inspired by timeless elegance.">
+<title>MAISON ÉLÉRA | The Art of Wearing a Memory</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cream: #f7f3ed;
+  --ivory: #eee6da;
+  --gold: #b49a72;
+  --dark: #30271f;
+  --muted: #82786d;
+  --white: #fffdf9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--dark);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+button {
+  font: inherit;
+}
+
+.container {
+  width: min(1180px, 90%);
+  margin: auto;
+}
+
+.section {
+  padding: 105px 0;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(38px, 5vw, 62px);
+}
+
+.section-intro {
+  max-width: 600px;
+  margin: 18px auto 50px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ANNOUNCEMENT */
+
+.announcement {
+  background: var(--dark);
+  color: #f8f0e5;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+
+header {
+  background: rgba(247,243,237,.96);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e7ded2;
+}
+
+.navbar {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 27px;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+
+.logo span {
+  color: var(--gold);
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color .3s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.nav-cta {
+  border: 1px solid var(--dark);
+  padding: 12px 21px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 27px;
+  cursor: pointer;
+  color: var(--dark);
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background: var(--dark);
+  color: white;
+  border: 1px solid var(--dark);
+}
+
+.btn-dark:hover {
+  background: transparent;
+  color: var(--dark);
+}
+
+.btn-light {
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-light:hover {
+  background: white;
+  color: var(--dark);
+}
+
+/* HERO */
+
+.hero {
+  min-height: 690px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background:
+    linear-gradient(90deg, rgba(30,23,18,.68), rgba(30,23,18,.12)),
+    url('https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=2000&q=85')
+    center 55% / cover no-repeat;
+  color: white;
+}
+
+.hero-content {
+  max-width: 650px;
+  padding: 100px 0;
+}
+
+.hero .eyebrow {
+  color: #e3c99e;
+}
+
+.hero h1 {
+  font-size: clamp(58px, 8vw, 100px);
+  margin-bottom: 25px;
+  line-height: .98;
+}
+
+.hero p {
+  max-width: 440px;
+  color: #f0e7dc;
+  font-size: 14px;
+  margin-bottom: 35px;
+  font-weight: 300;
+}
+
+/* INTRO */
+
+.intro {
+  text-align: center;
+  max-width: 760px;
+  margin: auto;
+}
+
+.intro h2 {
+  margin-bottom: 25px;
+}
+
+.intro p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* STORY */
+
+.story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 85px;
+}
+
+.story-image {
+  height: 570px;
+  overflow: hidden;
+}
+
+.story-image img {
+  height: 100%;
+  transition: transform .7s;
+}
+
+.story-image:hover img {
+  transform: scale(1.04);
+}
+
+.story-text p {
+  color: var(--muted);
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.story-text h2 {
+  max-width: 500px;
+}
+
+/* PRODUCTS */
+
+.products {
+  background: var(--white);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-image {
+  height: 390px;
+  overflow: hidden;
+  background: var(--ivory);
+  position: relative;
+}
+
+.product-image img {
+  height: 100%;
+  transition: transform .6s;
+}
+
+.product-card:hover img {
+  transform: scale(1.06);
+}
+
+.product-info {
+  padding: 23px 10px;
+}
+
+.product-info h3 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.product-info p {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.price {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--gold);
+}
+
+.product-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 5px;
+}
+
+/* INGREDIENTS */
+
+.notes {
+  background: #eae1d5;
+}
+
+.notes-layout {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.notes-image {
+  height: 480px;
+}
+
+.notes-image img {
+  height: 100%;
+}
+
+.note-list {
+  margin-top: 35px;
+}
+
+.note-item {
+  border-bottom: 1px solid #cfc1af;
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-item h3 {
+  font-size: 25px;
+}
+
+.note-item span {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+
+/* EXPERIENCE */
+
+.experience {
+  min-height: 500px;
+  background:
+    linear-gradient(rgba(34,26,20,.5),rgba(34,26,20,.5)),
+    url('https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1800&q=85')
+    center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.experience h2 {
+  max-width: 700px;
+  margin: 0 auto 25px;
+}
+
+.experience p {
+  max-width: 540px;
+  margin: 0 auto 30px;
+  color: #eee2d5;
+  font-size: 14px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  background: var(--white);
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.review {
+  background: var(--cream);
+  padding: 35px;
+}
+
+.stars {
+  color: var(--gold);
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.review p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.review h3 {
+  font-size: 23px;
+}
+
+.review small {
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/* FAQ */
+
+.faq-list {
+  max-width: 800px;
+  margin: 45px auto 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid #dcd2c5;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+  color: var(--dark);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+}
+
+.faq-question span {
+  color: var(--gold);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+}
+
+.faq-answer {
+  display: none;
+  color: var(--muted);
+  font-size: 13px;
+  padding: 0 30px 24px 0;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-question span {
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+/* CONTACT */
+
+.contact {
+  background: #eae1d5;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 650px;
+  margin: auto;
+}
+
+.contact-content p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 20px 0 35px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+.contact-details a:hover {
+  color: var(--gold);
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--dark);
+  color: #f5eee5;
+  padding: 65px 0 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 45px;
+  padding-bottom: 50px;
+}
+
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 27px;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.footer-about p {
+  color: #c1b5a8;
+  font-size: 12px;
+  max-width: 260px;
+}
+
+.footer-column h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+
+.footer-column a {
+  display: block;
+  color: #c1b5a8;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.footer-column a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid #54483e;
+  padding-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  color: #b9ad9f;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 18px;
+  }
+
+  .story, .notes-layout {
+    gap: 40px;
+  }
+
+  .product-image {
+    height: 300px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .navbar {
+    height: 72px;
+  }
+
+  .logo {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: var(--cream);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 15px 5% 25px;
+    border-bottom: 1px solid #e1d6c9;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 14px 0;
+  }
+
+  .nav-cta {
+    border: none;
+    padding: 14px 0 !important;
+  }
+
+  .hero {
+    min-height: 610px;
+    background-position: 60% center;
+  }
+
+  .hero h1 {
+    font-size: 62px;
+  }
+
+  .hero-content {
+    padding: 75px 0;
+  }
+
+  .story, .notes-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .story-image {
+    height: 390px;
+  }
+
+  .notes-image {
+    height: 330px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .product-image {
+    height: 390px;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review {
+    padding: 28px;
+  }
+
+  .experience {
+    min-height: 430px;
+  }
+
+  .faq-question {
+    font-size: 21px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 20px;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero h1 {
+    font-size: 51px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-about {
+    grid-column: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="announcement">
+  DISCOVER THE ART OF LUXURY FRAGRANCE
+</div>
+
+<header>
+  <nav class="navbar container">
+    <a href="#home" class="logo">MAISON <span>ÉLÉRA</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#notes">Ingredients</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">The Essence of Elegance</div>
+      <h1>The Art of<br>Wearing a<br>Memory.</h1>
+      <p>
+        Discover fragrances that capture emotions,
+        celebrate individuality and leave an unforgettable impression.
+      </p>
+      <a href="#collection" class="btn btn-light">
+        Explore the Collection
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+
+<section class="section">
+  <div class="container intro">
+    <div class="eyebrow">Welcome to Maison ÉLÉRA</div>
+    <h2>Some Moments Deserve<br>to Last Forever.</h2>
+    <p>
+      A fragrance is more than a scent. It is an invisible signature,
+      a beautiful memory and a reflection of who you are.
+      Discover a world where every note tells a story.
+    </p>
+  </div>
+</section>
+
+<!-- STORY -->
+
+<section class="section" id="story">
+  <div class="container story">
+
+    <div class="story-image">
+      <img
+        src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=1000&q=85"
+        alt="Luxury fragrance editorial photography">
+    </div>
+
+    <div class="story-text">
+      <div class="eyebrow">Our Philosophy</div>
+      <h2>More Than a Fragrance. An Identity.</h2>
+      <p>
+        Inspired by the timeless art of French perfumery,
+        Maison ÉLÉRA celebrates the beauty of individuality
+        through thoughtfully imagined fragrance compositions.
+      </p>
+      <p>
+        Every creation is designed to evoke emotion,
+        awaken memories and become a part of your personal story.
+      </p>
+      <a href="#collection" class="btn btn-dark">
+        Discover Our World
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- COLLECTION -->
+
+<section class="section products" id="collection">
+  <div class="container">
+
+    <div class="center">
+      <div class="eyebrow">The Signature Collection</div>
+      <h2>Find Your Signature Scent.</h2>
+      <p class="section-intro">
+        Three distinctive fragrance experiences.
+        Each one tells a different story.
+      </p>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=85"
+            alt="Éclat fragrance">
+        </div>
+        <div class="product-info">
+          <h3>ÉCLAT</h3>
+          <p>BERGAMOT · WHITE MUSK · JASMINE</p>
+          <span class="price">€145.00</span>
+          <a href="#contact" class="product-link">Enquire Now</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85"
+            alt="Noir fragrance">
+        </div>
+        <div class="product-info">
+          <h3>NOIR</h3>
+          <p>AMBER · SANDALWOOD · VANILLA</p>
+          <span class="price">€165.00</span>
+          <a href="#contact" class="product-link">Enquire Now</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=900&q=85"
+            alt="Sérénité fragrance">
+        </div>
+        <div class="product-info">
+          <h3>SÉRÉNITÉ</h3>
+          <p>ROSE · CEDARWOOD · SOFT MUSK</p>
+          <span class="price">€155.00</span>
+          <a href="#contact" class="product-link">Enquire Now</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- NOTES -->
+
+<section class="section notes" id="notes">
+  <div class="container notes-layout">
+
+    <div class="notes-image">
+      <img
+        src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1100&q=85"
+        alt="Beautiful fragrance ingredients">
+    </div>
+
+    <div>
+      <div class="eyebrow">The Art of Composition</div>
+      <h2>A Symphony of Notes.</h2>
+      <p style="color:#82786d;margin-top:20px;font-size:14px">
+        Every fragrance unfolds like a beautiful composition,
+        revealing new layers with every passing moment.
+      </p>
+
+      <div class="note-list">
+        <div class="note-item">
+          <h3>Top Notes</h3>
+          <span>THE FIRST IMPRESSION</span>
+        </div>
+        <div class="note-item">
+          <h3>Heart Notes</h3>
+          <span>THE SOUL OF THE SCENT</span>
+        </div>
+        <div class="note-item">
+          <h3>Base Notes</h3>
+          <span>THE LASTING MEMORY</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section class="experience">
+  <div class="container">
+    <div class="eyebrow">An Invitation to Discover</div>
+    <h2>Elegance Is an Emotion.</h2>
+    <p>
+      Let your fragrance speak before you do.
+      Find the scent that feels unmistakably yours.
+    </p>
+    <a href="#collection" class="btn btn-light">
+      Discover Your Fragrance
+    </a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="section testimonials">
+  <div class="container">
+
+    <div class="center">
+      <div class="eyebrow">Words of Appreciation</div>
+      <h2>Loved for a Reason.</h2>
+      <p class="section-intro">
+        A beautiful fragrance creates memories that stay with us.
+      </p>
+    </div>
+
+    <div class="review-grid">
+
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>
+          "A beautiful, sophisticated fragrance.
+          The scent feels elegant without being overpowering.
+          Absolutely lovely."
+        </p>
+        <h3>Amelia R.</h3>
+        <small>FRAGRANCE LOVER</small>
+      </article>
+
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>
+          "The presentation, the scent and the entire experience
+          feel incredibly special. A wonderful discovery."
+        </p>
+        <h3>Charlotte M.</h3>
+        <small>VERIFIED CUSTOMER</small>
+      </article>
+
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>
+          "Warm, delicate and memorable.
+          This has quickly become one of my favourite
+          fragrance experiences."
+        </p>
+        <h3>Sophia L.</h3>
+        <small>FRAGRANCE ENTHUSIAST</small>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+
+<section class="section" id="faq">
+  <div class="container">
+
+    <div class="center">
+      <div class="eyebrow">A Little More to Know</div>
+      <h2>Frequently Asked Questions.</h2>
+      <p class="section-intro">
+        Everything you need to know before discovering your signature scent.
+      </p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How can I choose the right fragrance?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Consider the notes you naturally enjoy.
+          Fresh citrus and floral notes offer a lighter experience,
+          while amber, vanilla and woods create a warmer character.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How long does a fragrance last?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Longevity depends on the fragrance composition,
+          concentration, skin chemistry and application.
+          Some fragrances remain noticeable for several hours.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Where should I apply perfume?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Apply fragrance to pulse points such as your wrists
+          and neck. Avoid rubbing your wrists together after application.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How can I place an order?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Contact us by email or phone to enquire about our
+          collection and available ordering options.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How should I store my fragrance?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Keep your fragrance in a cool, dry place away from
+          direct sunlight and sudden temperature changes.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="section contact" id="contact">
+  <div class="container contact-content">
+
+    <div class="eyebrow">We Would Love to Hear From You</div>
+    <h2>Your Scent. Your Signature.</h2>
+
+    <p>
+      Have a question or want to discover your next favourite fragrance?
+      Get in touch with us. We'd be delighted to help.
+    </p>
+
+    <a href="mailto:hrpetrosyan19@gmail.com" class="btn btn-dark">
+      Get in Touch
+    </a>
+
+    <div class="contact-details">
+      <a href="tel:+37477198985">+374 77 198985</a>
+      <a href="mailto:hrpetrosyan19@gmail.com">
+        hrpetrosyan19@gmail.com
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-about">
+        <div class="footer-logo">MAISON ÉLÉRA</div>
+        <p>
+          An expression of timeless elegance.
+          Discover the art of fragrance and the beauty
+          of unforgettable moments.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#collection">Collection</a>
+        <a href="#notes">Ingredients</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Information</h3>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+        <a href="#collection">Our Fragrances</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="tel:+37477198985">+374 77 198985</a>
+        <a href="mailto:hrpetrosyan19@gmail.com">
+          Email Us
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 MAISON ÉLÉRA. ALL RIGHTS RESERVED.</span>
+      <span>CRAFTED WITH ELEGANCE.</span>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+
+// MOBILE NAVIGATION
+
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', isOpen);
+  menuToggle.textContent = isOpen ? '×' : '☰';
+});
+
+// CLOSE MENU AFTER CLICKING A LINK
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.textContent = '☰';
+  });
+});
+
+// FAQ ACCORDION
+
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const item = button.parentElement;
+    const isActive = item.classList.contains('active');
+
+    document.querySelectorAll('.faq-item').forEach(faq => {
+      faq.classList.remove('active');
+      faq.querySelector('.faq-question')
+        .setAttribute('aria-expanded', 'false');
+    });
+
+    if (!isActive) {
+      item.classList.add('active');
+      button.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+</script>
+
+</body>
+</html>
+
